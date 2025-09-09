@@ -1,0 +1,144 @@
+.savedTasks{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px 0;
+}
+.savedContainer{
+  transition: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.task{
+  flex: 1;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.button{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.savedContainer-important{
+  transition: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgb(255, 38, 0);
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.savedContainerImportant p{
+  flex: 1;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.savedContainerImportant button{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.checkButton{
+  background-color: rgb(37, 255, 4);
+  width: 40px;
+  height: 40px;
+  transition: 0.25s;
+}
+.checkButton:hover{
+  background-color: rgb(32, 209, 5);
+}
+.checkButton:active{
+  transition: 0.04s;
+  background-color: rgb(30, 168, 9);
+}
+
+.savedContainer-home{
+  transition: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #22bae0;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.savedContainer-work{
+  transition: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #D35400;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.savedContainer-shopping{
+  transition: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  background-color: #008080;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.check-icon{
+  width: 25px;
+}
+
+.deleteButton{
+  background-color: rgb(161, 5, 5);
+  width: 40px;
+  height: 40px;
+  transition: 0.25s;
+}
+
+.deleteButton:hover{
+  background-color: rgb(111, 6, 6);
+}
+.deleteButton:active{
+  transition: 0.04s;
+  background-color: rgb(71, 7, 7);
+}
+.delete-icon{
+  width: 25px;
+  color: white;
+}
+
+.noTasks{
+  margin: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.emptyTaskMessage{
+  color: rgb(0, 0, 0, 0.4);
+  font-size: 12px;
+  font-style: italic;
+}

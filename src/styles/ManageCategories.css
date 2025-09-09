@@ -1,0 +1,109 @@
+.popup{
+  position: absolute;
+  top: 0;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  z-index: 100;
+}
+.component-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.component-top{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.exitButton{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.component-middle{
+  width: 100%;
+}
+.component-middle-left{
+  display: flex;
+  flex: 1;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.removeDiv{
+  border-radius: 50px;
+  position: absolute;
+  top: -5px ;
+  right: 0;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card p{
+  font-size: small;
+  max-width: 50px;
+  margin: 0;
+}
+.cardTop{
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.iconSize{
+  width: 20px;
+  height: 20px;
+}
+.component-middle-right{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-weight: 400;
+  height: fit-content;
+  width: 40px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.component-middle-right:hover{
+  color: #535bf2;
+}
+
+
+.component-bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+.addDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addCategoryButton{
+  padding: 0px 40px;
+}
+

@@ -1,0 +1,45 @@
+.stats{
+  position: fixed;
+  top: 50px;
+  left: 100px;
+}
+.chart{
+  pointer-events: none; 
+  user-select: none;
+}
+.statsText{
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2d692fff;
+}
+
+.legendComponent{
+  display: flex;
+  align-items: center;
+  height: min-content;
+}
+.legendComponent p{
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 3px;
+  
+}
+.colorLegend{
+  color: transparent;
+  font-size: 10px;
+  background-color: transparent;
+  user-select: none;
+}
+
+.statsDone{
+  font-size: 60px;
+  color: black;
+}
+
+.felicitation{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

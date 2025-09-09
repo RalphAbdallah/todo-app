@@ -1,0 +1,55 @@
+.addCategory-component{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFile [type="file"]{
+  display: none;
+}
+
+.categoryInfo{
+  padding: 5px;
+}
+.categoryInfo [type="text"]{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.nameInput {
+  width: 80%;
+}
+.categoryInfo [type="text"]:focus{
+  outline: none;
+}
+.inputFile img{
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: none;
+  margin: 5px;
+}
+
+.fileLabel {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px ;
+  background: #4e73df;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.previewImage{
+  max-width: 30px;
+  height: 10px;
+}
+
+.submitDiv{
+  display: flex;
+  justify-content: center;
+}
+.submitButton{
+  padding: 0px 40px;
+}

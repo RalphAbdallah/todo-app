@@ -1,0 +1,129 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+
+.title{
+  text-align: center;
+  font-size: 52px;
+  font-weight: bold;
+  margin: 10px 0;
+
+}
+
+.addTask{
+  text-align: center;
+}
+.addTask p{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.addTask-action{
+  background-color: #d8d5c6;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.addTask-action input{
+  font-size: 28px;
+  padding: 5px 15px;
+  background: transparent;
+  border: solid;
+  color: black ;
+  flex: 1;
+  border: 3px solid transparent;
+}
+.addTask-action input::placeholder{
+  color: black;
+}
+.addTask-action input:focus{
+  outline: none;
+}
+
+.addTask-action-two{
+  display: flex;
+}
+
+
+.addButton{
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 0;
+  height: 33px;
+  width: 64px;
+  padding: 23.5px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-icon{
+  width: 25px;
+}
+
+.importantButton{
+  background-color: red;
+  border-radius: 0px;
+  border-bottom-left-radius: 10px;
+}
+
+.tasksDone{
+  background-color: #D8D5C6;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.tasksDoneTitleComponent{
+  border-bottom:1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasksDoneTitleComponent p{
+  flex: 1;
+}
+
+.invisibleText{
+  color: transparent;
+  user-select: none;
+}
+
+.tasksDoneTitle{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tasksDoneClear{
+  text-align: end;
+  margin-right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.taskDoneComponent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+  border-bottom:1px solid black;
+}
+
+.taskDoneComponent p{
+  margin: 10px 0;
+}
+
