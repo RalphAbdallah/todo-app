@@ -47,7 +47,7 @@ select{
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 7px;
-  max-width: 60px;
+  max-width: 65px;
   cursor: pointer;
 }
 select:focus{

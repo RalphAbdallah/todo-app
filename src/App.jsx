@@ -70,24 +70,25 @@ const App = () => {
       <p className='title'>ToDo App</p>
         <div className='addTask'>
           <p>Add task</p>
-          <div className={`addTask-action`} style={{backgroundColor: getCategoryColor(category)}}>
-            
-            <input ref={inputRef} type="text" placeholder='Enter a task..' onChange={(e) => {
-              setInputTask(e.target.value)
-            }}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter'){
-                addTask()
-              }
-            }}
-            value={inputTask}/>
-            
-            <div className='addTask-action-two'>
-              <button className='importantButton' onClick={() => {addImportantTask()}}><img src="/attention-triangle.svg" alt="" /></button>
-              <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='/addThick.svg'/>}</button>
-            </div>
+          
+            <div className={`addTask-action`} style={{backgroundColor: getCategoryColor(category)}}>
+              <input ref={inputRef} type="text" placeholder='Enter a task..' onChange={(e) => {
+                setInputTask(e.target.value)
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter'){
+                  addTask()
+                }
+              }}
+              value={inputTask}/>
+              
+              <div className='addTask-action-two'>
+                <button className='importantButton' onClick={() => {addImportantTask()}}><img src="/attention-triangle.svg" alt="" /></button>
+                <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='/addThick.svg'/>}</button>
+              </div>
             
           </div>
+          
           <div className='emptyTaskMessage'>
             {emptyTaskMessage}
           </div>

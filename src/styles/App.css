@@ -137,21 +137,22 @@
 
   .title{
     text-align: center;
-    font-size: 52px;
+    font-size: 48px;
     font-weight: bold;
     margin: 10px 0;
 
   }
 
-  .addTask{
-    text-align: center;
-  }
   .addTask p{
     margin: 0;
     font-size: 20px;
     font-weight: 600;
   }
-
+  .hi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .addTask-action{
     background-color: #d8d5c6;
     display: flex;
@@ -159,6 +160,7 @@
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
+    max-width: 300px;
   }
 
   .addTask-action input{
@@ -168,7 +170,8 @@
     border: solid;
     color: black ;
     flex: 1;
-    border: 3px solid transparent;
+    border: none;
+    max-width: 200px;
   }
 
   .addTask-action input::placeholder{
@@ -206,7 +209,7 @@
 
   .tasksDone{
     background-color: #D8D5C6;
-    width: 100%;
+    width: 90%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 50px;
@@ -225,6 +228,7 @@
   .invisibleText{
     color: transparent;
     user-select: none;
+    font-size: 11px;
   }
 
   .tasksDoneTitle{
@@ -236,7 +240,7 @@
 
   .tasksDoneClear{
     text-align: end;
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: 600;
     cursor: pointer;
   }
