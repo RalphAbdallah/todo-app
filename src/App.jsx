@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react'
-
 import './styles/App.css'
 import { tasks, tasksDone } from './data/tasks.js'
 import { fixFormat } from './utils/fixFormat.js'
@@ -84,8 +83,8 @@ const App = () => {
             value={inputTask}/>
             
             <div className='addTask-action-two'>
-              <button className='importantButton' onClick={() => {addImportantTask()}}><img src="todo-app/attention-triangle.svg" alt="" /></button>
-              <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='todo-app/addThick.svg'/>}</button>
+              <button className='importantButton' onClick={() => {addImportantTask()}}><img src="/attention-triangle.svg" alt="" /></button>
+              <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='/addThick.svg'/>}</button>
             </div>
             
           </div>

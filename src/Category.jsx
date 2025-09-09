@@ -25,7 +25,7 @@ const Category = ({filter, setFilter, setCategory, inputRef, categoryInfoList, s
               return(
                 <div key={category.id} className='hover-effect' onClick={() => {setCategory(category.name);inputRef.current.focus()}}>
                   <button style={{backgroundColor: category.backgroundColor}} >
-                  {category.iconURL ? <img className='icon' src={`todo-app${category.iconURL}`} alt={category.name} /> : null}
+                  {category.iconURL ? <img className='icon' src={category.iconURL} alt={category.name} /> : null}
                   </button>
                   <div className='hover-effect-child'></div>
                 </div>
@@ -36,7 +36,7 @@ const Category = ({filter, setFilter, setCategory, inputRef, categoryInfoList, s
         </div>
       </div>
       <div>
-        <button className='removeCatButton' onClick={() => {setCategory('');inputRef.current.focus()}}><img src="todo-app/removeCategory.svg" alt="removeCategory" /></button>
+        <button className='removeCatButton' onClick={() => {setCategory('');inputRef.current.focus()}}><img src="./removeCategory.svg" alt="removeCategory" /></button>
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
           <option value="">All</option>
           {categoryInfoList.map(category => {
@@ -44,6 +44,7 @@ const Category = ({filter, setFilter, setCategory, inputRef, categoryInfoList, s
               return ( <option key={category.id} value={category.name}>{fixFormat(category.name)}</option> )
             }
           })}
+         
         </select>
       </div>
     </div>
