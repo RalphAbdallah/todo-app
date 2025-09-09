@@ -19,23 +19,25 @@ const Category = ({filter, setFilter, setCategory, inputRef, categoryInfoList, s
             <p className='category-left-text-manage'>Manage</p>
           </div>
           
-          {
-            categoryInfoList.map(category =>{
-            if (category.name !== 'important'){
-              return(
-                <div key={category.id} className='hover-effect' onClick={() => {setCategory(category.name);inputRef.current.focus()}}>
-                  <button style={{backgroundColor: category.backgroundColor}} >
-                  {category.iconURL ? <img className='icon' src={category.iconURL} alt={category.name} /> : null}
-                  </button>
-                  <div className='hover-effect-child'></div>
-                </div>
-              )}
-            })
-          }
-          
+          <div>
+            {
+              categoryInfoList.map(category =>{
+              if (category.name !== 'important'){
+                return(
+                  <div key={category.id} className='hover-effect' onClick={() => {setCategory(category.name);inputRef.current.focus()}}>
+                    <button style={{backgroundColor: category.backgroundColor}} >
+                    {category.iconURL ? <img className='icon' src={category.iconURL} alt={category.name} /> : null}
+                    </button>
+                    <div className='hover-effect-child'></div>
+                  </div>
+                )}
+              })
+            }
+          </div>
+  
         </div>
       </div>
-      <div>
+      <div className='category-right'>
         <button className='removeCatButton' onClick={() => {setCategory('');inputRef.current.focus()}}><img src="./removeCategory.svg" alt="removeCategory" /></button>
         <select value={filter} onChange={(e) => setFilter(e.target.value)}>
           <option value="">All</option>

@@ -104,7 +104,7 @@ const App = () => {
         {<TaskDoneList tasksDoneList={tasksDoneList}/>}
       </div>
       }
-      <Stats tasksDoneList={tasksDoneList} tasksList={tasksList} categoryInfoList={categoryInfoList}/>
+      {inputTask && <Stats tasksDoneList={tasksDoneList} tasksList={tasksList} categoryInfoList={categoryInfoList}/>}
     </div>
   )
 }
