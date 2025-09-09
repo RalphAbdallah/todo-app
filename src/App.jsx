@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { Analytics } from "@vercel/analytics/next"
 import './styles/App.css'
 import { tasks, tasksDone } from './data/tasks.js'
 import { fixFormat } from './utils/fixFormat.js'
