@@ -84,20 +84,6 @@
   background-color: rgb(0, 0, 0, 0.4);
 }
 
-
-.addCatButton{
-  background-color: #228B22;
-  transition: 0.25s;
-  font-size: 14px;
-}
-.addCatButton:hover{
-  background-color: #1d751d;
-}
-.addCatButton:active{
-  transition: 0.05;
-  background-color: #185318;
-}
-
 .removeCatButton{
   background-color: grey;
 }
@@ -142,5 +128,16 @@
     bottom: -9px;
     right: 0;
   }
-
+  .hover-effect{
+    display: none;
+  }
+  .hover-effect-child{
+    display: none;
+  }
+  .hover-effect-child:hover{
+    display: none;
+  }
+  .hover-effect-child:active{
+    display: none;
+  }
 }
