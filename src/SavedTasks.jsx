@@ -38,7 +38,7 @@ const SavedTasks = ({tasksList, setTasksList, filter, tasksDoneList, setTasksDon
                 }}><img className='check-icon' src="/check.svg" alt="" /></button>
                 <button className='button deleteButton' onClick={() => {
                   deleteItem(task.id)
-                }}><img className='delete-icon' src="./delete.svg" alt="" /></button>
+                }}><img className='delete-icon' src="/delete.svg" alt="" /></button>
               </div> 
             )
           }else{

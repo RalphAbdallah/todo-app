@@ -17,7 +17,7 @@ const ManageCategories = ({categoryInfoList, setCategoryInfoList, manageCategory
     <div className="popup">
       <div className="component-main">
         <div className="component-top">
-          <div className="exitButton" onClick={() => {setManageCategoryState(false)}}><img src="/backArrow.svg" alt="" /></div>
+          <div className="exitButton" onClick={() => {setManageCategoryState(false)}}><img src="todo-app/backArrow.svg" alt="" /></div>
           <div className="component-middle">
             <div className="component-middle-left">
               { !editOn ?
@@ -26,7 +26,7 @@ const ManageCategories = ({categoryInfoList, setCategoryInfoList, manageCategory
                     return (
                       <div className="card" key={category.id}>
                         <div className="cardTop" style={{backgroundColor: category.backgroundColor}}>
-                          {category.iconURL ? <img className="iconSize" src={category.iconURL} alt="" /> : null}
+                          {category.iconURL ? <img className="iconSize" src={`todo-app${category.iconURL}`} alt="" /> : null}
                         </div>
                         <p>{initialsOnly(fixFormat(category.name))}</p>
                       </div>
@@ -38,9 +38,9 @@ const ManageCategories = ({categoryInfoList, setCategoryInfoList, manageCategory
                   if (category.name !== 'important'){
                     return (
                       <div className="card" key={category.id}>
-                        <div className="removeDiv" onClick={() => {deleteCategory(category.name)}}><img style={{width: '15px'}} src="dash.svg"/></div>
+                        <div className="removeDiv" onClick={() => {deleteCategory(category.name)}}><img style={{width: '15px'}} src="todo-app/dash.svg"/></div>
                         <div className="cardTop" style={{backgroundColor: category.backgroundColor}}>
-                          {category.iconURL ? <img className="iconSize" src={category.iconURL} alt="" /> : null}
+                          {category.iconURL ? <img className="iconSize" src={`todo-app${category.iconURL}`} alt="" /> : null}
                         </div>
                         <p>{initialsOnly(fixFormat(category.name))}</p>
                       </div>
