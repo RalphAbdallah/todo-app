@@ -67,11 +67,13 @@ const Stats = ({tasksDoneList, tasksList,categoryInfoList}) => {
             <TaskPieChart COLORS={COLORS} Data={Data}/>
           </div>
           {(tasksList.length > 0 || tasksDoneList.length > 0) && <>
-            <div>
+            <div className='legendSection'>
               {FinalCategoriesNeededNames.map((cat,i) => 
                 <div key={i} className='legendComponent'>
-                  <span className='colorLegend' style={{backgroundColor: FinalColorsNeeded[i % FinalColorsNeeded.length]}}>aall</span>
-                  <p>{fixFormat(cat)}</p>
+                  <div className='legendComponentDiv'>
+                    <span className='colorLegend' style={{backgroundColor: FinalColorsNeeded[i % FinalColorsNeeded.length]}}>aalaal</span>
+                    <p>{fixFormat(cat)}</p>
+                  </div>
                 </div>
               )}
             </div>

@@ -76,3 +76,9 @@ input[type="color"] {
     font-size: 18px;
   }
 }
+
+@media (prefers-color-scheme: light){
+  button{
+    color: white;
+  }
+}

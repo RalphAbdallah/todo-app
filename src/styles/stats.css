@@ -43,3 +43,69 @@
   font-weight: bold;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .stats{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  .chart{
+    pointer-events: none; 
+    user-select: none;
+  }
+  
+
+  .legendSection{
+    
+    width: 100%;
+    margin-left: 25%;
+    min-height: 100px;
+    column-count: 2;
+    column-gap: 5px;
+  }
+  .legendComponent{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    height: min-content;
+
+  }
+  .legendComponentDiv{
+    display: flex;
+    
+  }
+  .statsText{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .legendComponent p{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 3px;
+    
+  }
+  .colorLegend{
+    color: transparent;
+    font-size: 10px;
+    background-color: transparent;
+    user-select: none;
+  }
+
+  .statsDone{
+    font-size: 60px;
+    color: black;
+  }
+
+  .felicitation{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -68,45 +68,43 @@ const App = () => {
   return (
     <div className='container'>
       <p className='title'>ToDo App</p>
-        <div className='addTask'>
-          <p>Add task</p>
+      <div className='addTask'>
+        <p>Add task</p>
+        <div className={`addTask-action`} style={{backgroundColor: getCategoryColor(category)}}>
+          <input ref={inputRef} type="text" placeholder='Enter a task..' onChange={(e) => {
+            setInputTask(e.target.value)
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter'){
+              addTask()
+            }
+          }}
+          value={inputTask}/>
           
-            <div className={`addTask-action`} style={{backgroundColor: getCategoryColor(category)}}>
-              <input ref={inputRef} type="text" placeholder='Enter a task..' onChange={(e) => {
-                setInputTask(e.target.value)
-              }}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter'){
-                  addTask()
-                }
-              }}
-              value={inputTask}/>
-              
-              <div className='addTask-action-two'>
-                <button className='importantButton' onClick={() => {addImportantTask()}}><img src="/attention-triangle.svg" alt="" /></button>
-                <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='/addThick.svg'/>}</button>
-              </div>
-            
+          <div className='addTask-action-two'>
+            <button className='importantButton' onClick={() => {addImportantTask()}}><img src="/attention-triangle.svg" alt="" /></button>
+            <button className='addButton' onClick={() => {addTask()}}>{<img className='add-icon' src='/addThick.svg'/>}</button>
           </div>
-          
-          <div className='emptyTaskMessage'>
-            {emptyTaskMessage}
-          </div>
-          <Category filter={filter} setFilter={setFilter} setCategory={setCategory} inputRef={inputRef} categoryInfo={categoryInfo} categoryInfoList={categoryInfoList} setCategoryInfoList={setCategoryInfoList} tasksList={tasksList}/>  
         </div>
-      <SavedTasks tasksList={tasksList} setTasksList={setTasksList} filter={filter} tasksDoneList={tasksDoneList} setTasksDoneList={setTasksDoneList} getCategoryColor={getCategoryColor}/>
-      {tasksDoneList.length !== 0 && 
-      <div className='tasksDone'>
-        <div className='tasksDoneTitleComponent'>
-          <p className='invisibleText'>abcdawdafwaawawfawga</p>
-          <p className='tasksDoneTitle'>Tasks Done</p>
-          <p className='tasksDoneClear' onClick={() => {setTasksDoneList([])}}>Clear</p>
+        <div className='emptyTaskMessage'>
+          {emptyTaskMessage}
         </div>
-        {<TaskDoneList tasksDoneList={tasksDoneList}/>}
+        <Category filter={filter} setFilter={setFilter} setCategory={setCategory} inputRef={inputRef} categoryInfo={categoryInfo} categoryInfoList={categoryInfoList} setCategoryInfoList={setCategoryInfoList} tasksList={tasksList}/>  
       </div>
-      }
-      {inputTask && <Stats tasksDoneList={tasksDoneList} tasksList={tasksList} categoryInfoList={categoryInfoList}/>}
+    <SavedTasks tasksList={tasksList} setTasksList={setTasksList} filter={filter} tasksDoneList={tasksDoneList} setTasksDoneList={setTasksDoneList} getCategoryColor={getCategoryColor}/>
+    <Stats tasksDoneList={tasksDoneList} tasksList={tasksList} categoryInfoList={categoryInfoList}/>
+    {tasksDoneList.length !== 0 && 
+    <div className='tasksDone'>
+      <div className='tasksDoneTitleComponent'>
+        <p className='invisibleText'>abcdawdafwaawawfawga</p>
+        <p className='tasksDoneTitle'>Tasks Done</p>
+        <p className='tasksDoneClear' onClick={() => {setTasksDoneList([])}}>Clear</p>
+        
+      </div>
+      {<TaskDoneList tasksDoneList={tasksDoneList}/>}
     </div>
+    }
+  </div>
   )
 }
 
